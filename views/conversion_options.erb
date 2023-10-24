@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert <%= @primary_currency %></title>
+</head>
+<body>
+    <h1>Convert <%= @primary_currency %> to...</h1>
+    <ul>
+        <% @currencies.each do |currency| %>
+            <li><a href="/<%= @primary_currency %>/<%= currency %>">Convert <%= @primary_currency %> to <%= currency %></a></li>
+        <% end %>
+    </ul>
+</body>
+</html>
