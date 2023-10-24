@@ -4,11 +4,11 @@
     <title>Convert <%= @primary_currency %></title>
 </head>
 <body>
-    <h1>Convert <%= @primary_currency %> to...</h1>
-    <p>Go <a href="/currencies">back</a></p>
+    <h1>Convert <%= @primary_currency %></h1>
+    <p>Go <a href="/">back</a>.</p>
     <ul>
         <% @currencies.each do |currency| %>
-            <li><a href="/<%= @primary_currency %>/<%= currency %>">Convert <%= @primary_currency %> to <%= currency %></a></li>
+            <li><a href="/<%= @primary_currency %>/<%= currency %>">Convert 1 <%= @primary_currency %> to <%= currency %>...</a></li>
         <% end %>
     </ul>
 </body>
